@@ -1,0 +1,113 @@
+.first-nav {
+  height: 59px;
+  width: 100%;
+  background-color: $main-bg-color;
+  color: $second-font-color;
+  font-family: $main-font;
+  font-size: 14px;
+
+  .wrapper {
+    @include flexMix(space-between, center);
+    height: 59px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $second-font-color;
+  }
+
+  .contacts {
+    @include flexMix(center, center);
+    gap: 30px;
+  }
+
+  .contact {
+    @include flexMix(center, center);
+    gap: 10px;
+  }
+
+  .languages {
+    position: relative;
+  }
+
+  .main-language {
+    @include flexMix(center, center);
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: absolute;
+    right: 7px;
+    display: none;
+  }
+
+  .language {
+    padding: 10px;
+    background-color: $main-bg-color;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid $main-bg-color;
+  }
+
+  .language:hover {
+    color: $main-bg-color;
+    background-color: $second-font-color;
+    border: 1px solid $main-bg-color;
+  }
+
+  .languages:hover .dropdown {
+    display: block;
+  }
+}
+
+.second-nav {
+  @include flexMix(space-between, center);
+  height: 85px;
+  width: 100%;
+  background-color: $second-font-color;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 700;
+  color: $main-font-color;
+
+    .wrapper {
+    @include flexMix(space-between, center);
+    height: 85px;
+  }
+
+    a {
+    text-decoration: none;
+    color: $main-font-color;
+  }
+
+  .navbar {
+    @include flexMix(space-between, center);
+    gap: 44px;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: $secondary-bg-color;
+  }
+
+  button {
+    @include flexMix(center, center);
+    gap: 10px;
+    background-color: $secondary-bg-color;
+    height: 50px;
+    width: 170px;
+    color: $second-font-color;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid $secondary-bg-color;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: $main-bg-color;
+  }
+}

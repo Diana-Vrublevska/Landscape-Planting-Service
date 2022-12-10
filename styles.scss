@@ -1,0 +1,9 @@
+@import "./variables";
+@import "./mixin";
+@import "./header";
+
+.wrapper {
+    width: 1410px;
+    display: block;
+    margin: auto;
+}
